@@ -18,3 +18,18 @@ else :
 # loops while and for is already discussed!!
     
 # functions
+def function1(*params,name  = 'samar'):
+     print(f'student name is {name} and student age is ',params[1])
+#return type and parameter type doesnt play important role, becuase python a dynamic language
+def function2(age,name:str,scores:list[int],**param) -> int:
+     print(f"{name}\'s age is {age}, from  {param['city']}, {param['institute']} \n his score in subjects is {scores} ")
+
+function1(22,33)
+
+function2(22,'umar',[88,67,89,45],institute='university of sindh',city='mirpur khas')
+
+#lamda , its anonnymous function with multiple parameters and single expression :- lamda parameter : expression
+
+x = lambda count : count * 2
+
+print(x(2))
